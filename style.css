@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    top: 0;
+}
+
+.navbar {
+  max-height: 84px;
+}
+
+.vault-nav {
+  max-height: 65px;
+  margin-bottom: 23px;
+}
+.title-shadow {
+  font-size: 25pt;
+}
+
+.main-story {
+  margin-top: 95px;
+}
+.radio-card {
+  padding: 0;
+  margin-top: 50px;
+}
+.dcr {
+  padding-left: 10px;
+}
+.minutemen {
+  padding-right: 10px;
+}

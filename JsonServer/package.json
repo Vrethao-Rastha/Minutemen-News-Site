@@ -1,16 +1,16 @@
 {
-  "name": "jsonserver",
+  "name": "bryan-template",
   "version": "1.0.0",
-  "description": "Commonwealth News Service",
+  "description": "",
   "main": "script.js",
-  "dependencies": {
-    "axios": "^0.17.1",
-    "json-server": "^0.12.1"
-  },
-  "devDependencies": {},
   "scripts": {
-    "json:server": "json-server --watch db.json"
+    "json:server": "json-server --watch db.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.12.1"
+  }
 }

@@ -1,8 +1,24 @@
 {
-  "users":[
-  {
-    "id":"1",
-    "name":"Joebob"
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "some title 4",
+      "description": "some description 4",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
   }
-  ]
-  }
+}
