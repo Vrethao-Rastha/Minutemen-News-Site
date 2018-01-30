@@ -12,6 +12,17 @@
   <div class="navbar-fixed-top">
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="#"><img class="vault-nav img-responsive" src="Images/OnB6GyAF_thumb.png" alt=""><h1 class="display-3 navbar-text">Radio Freedom<small class="text-muted title-shadow">Defend the people at a minutes notice</small></h1></a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          More Places
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Blog of the General</a>
+          <a class="dropdown-item" href="#">Piper's photo gallery</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Make a report</a>
+        </div>
+      </li>
     </nav>
   </div>
   <!-- end of nav section -->
@@ -25,10 +36,11 @@
       <div id="main-story" class="col-md-12 main-story">
         <div class="card">
           <div class="card-text card-header">
-            <h5 id="main-headline">This is the main story</h5>
             <img class="card-img-top" src="http://via.placeholder.com/700x150" alt="Card image cap"></div>
           <div class="card-body">
-            <p id="main-blurb" class="card-text"></p>
+            <div class="col-md-10 offset-md-2"
+            <a id="main-blurb" data-toggle="modal" data-target="#headlineModal" href="#"><p class="card-text">some stuff</p></a>
+          </div>
           </div>
         </div>
       </div>
@@ -38,7 +50,7 @@
         <div id="dcr-headlines" class="dcr radio-card card col-md-3">
           <div class="card-text card-header">
             <h5>The Latest news from Diamond City Radio</h5>
-            <img class="card-img-top img-fluid" src="http://via.placeholder.com/350x150" alt="Card image cap"></div>
+            <img id="dcr-picture" class="card-img-top img-fluid" src="http://via.placeholder.com/350x150" alt="Card image cap"></div>
           <div class="card-body">
             <div class="media">
               <img class="mr-3" src="http://via.placeholder.com/100x100" alt="Generic placeholder image">
@@ -81,24 +93,20 @@
         <div id="secondary-headlines" class="col-md-6">
           <div class="card radio-card">
             <div class="card-text card-header">
-              <h5>second headline area</h5>
               <img class="card-img-top img-fluid" src="http://via.placeholder.com/700x150" alt="Card image cap">
               <div class="card-body">
                 <div class="card-content">
-                  <h1>Story Title</h1>
-                  <p>Story blurb</p>
-                  By <a href="#"><span class="reporter">a reporter</span></a> | and a time
+                  <h1 id="second-title-one">Story Title</h1>
+                  By <a href="#"><span id="reporter1" class="reporter">a reporter</span></a> | four days ago
                 </div>
               </div>
             </div>
             <div class="card-text card-header">
-              <h5>second headline area</h5>
               <img class="card-img-top img-fluid" src="http://via.placeholder.com/700x150" alt="Card image cap">
               <div class="card-body">
                 <div class="card-content">
-                  <h1>Story Title</h1>
-                  <p>Story blurb</p>
-                  By <a href="#"><span class="reporter">a reporter</span> | and a time</a>
+                  <h1 id="second-title-two">Story Title</h1>
+                  By <a href="#"><span id="reporter2" class="reporter">a reporter</span> | one week ago</a>
                 </div>
               </div>
             </div>
@@ -152,11 +160,52 @@
       </div>
     </div>
 
+      <!-- modal area -->
 
+      <div class="modal fade" id="headlineModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="headlineModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="headlineModalContent" class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- end of container -->
   </div>
+    <!-- footer -->
+    <footer>
+      <div class="container-fluid social-section text-center">
+        <div class="row">
 
+
+  <img class="img-fluid faction-logo mx-auto" src="Images/1320-b0652f10ef63bc1ffd758db6490f4859d26ed39c.png" alt="">
+  <img class="img-fluid faction-logo mx-auto" src="Images/9585e263247384e0c29fd360475f41e50327d902_hq.jpg" alt="">
+  <img class="img-fluid faction-logo mx-auto" src="Images/photo-thumb-123743.png" alt="">
+  <img class="img-fluid faction-logo mx-auto" src="Images/pp,550x550.u3.jpg" alt="">
+
+
+
+      </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container-fluid text-center">
+          Copyright © 2277 Minutemen of the Commonwealth
+        </div>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

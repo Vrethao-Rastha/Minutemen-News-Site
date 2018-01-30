@@ -25,7 +25,12 @@ text-decoration: none;
 .title-shadow {
   font-size: 25pt;
 }
-
+.dropdown {
+  margin-right: 100px;
+}
+.dropdown-toggle{
+  color: white;
+}
 .main-story {
   margin-top: 95px;
 }
@@ -35,10 +40,33 @@ text-decoration: none;
 }
 .dcr {
   padding-left: 10px;
+  margin-bottom: 80px;
 }
 .minutemen {
   padding-right: 10px;
+  margin-bottom: 80px;
 }
 .reporter {
   color: red;
+}
+footer {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  bottom: 0;
+  background-color: #555555;
+  color: white;
+}
+.faction-logo {
+  margin-top: 5px;
+  background-color: white;
+  border-radius: 50%;
+  max-height: 50px;
+}
+#main-blurb {
+  font-size: 30pt;
+}
+#headlineModalContent {
+  font-size: 20pt;
 }
