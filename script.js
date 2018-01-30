@@ -3,26 +3,35 @@ fetch('http://localhost:3000/db')
 .then(arr => {
   // console.log(arr)
     // static headlines and pictures
-  document.addEventListener("DOMContentLoaded", newsPopulator);
   document.getElementById('main-blurb').addEventListener('click', learnMore)
   document.getElementById('main-blurb').innerHTML = arr.dcr[0].title
   document.getElementById('second-title-one').innerHTML = arr.Minutemen[8].title
   document.getElementById('reporter1').innerHTML = 'Piper Wright'
-  document.getElementById('second-title-two').innerHTML = arr.Minutemen[2].title
+  document.getElementById('second-title-two').innerHTML = arr.dcr[7].title
   document.getElementById('reporter2').innerHTML = 'Travis Miles'
+    // navbar buttons
   document.getElementById('blog').addEventListener('click', blogPage)
   document.getElementById('piper').addEventListener('click', piperPage)
   document.getElementById('report').addEventListener('click', reportPage)
-  console.log(arr.dcr[3].title)
 
 // loop for dynamic story generation
-  function newsPopulator(e){
-  for (let i = 0; i < arr.dcr.length; i++){
-    console.log(arr.dcr[i].title)
+  for (let i = 0; i < arr.Minutemen.length - 4; i++){
 
-    document.getElementById(`dcr-headline-${i}`).innerHTML = arr.dcr[i].title
+  document.getElementById(`minutemen-headline-${i+1}`).innerHTML = arr.Minutemen[i].title
+  document.getElementById(`dcr-headline-${i+1}`).innerHTML = arr.dcr[i+1].title
+
+  // document.getElementById(`minutemen-headline-${i+1}`).addEventListener('click', minutemenStory)
+  // document.getElementById(`dcr-headline-${i+1}`).addEventListener('click', dcrStory)
+
+  // function minutemenStory(){
+  //   document.getElementById('side-story-modal-headline').innerHTML = arr.dcr[0].story
+  //   document.getElementById('side-story-modal-content').innerHTML = arr.dcr[0].title
+  // }
+
+
+
   }
-}
+
 // modal news object function
 function learnMore(e){
 console.log('click')
