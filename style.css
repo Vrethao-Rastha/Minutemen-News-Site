@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
 }
+a {
+text-decoration: none;
+}
 
 .navbar-fixed-top {
     position: fixed;
@@ -35,4 +38,7 @@
 }
 .minutemen {
   padding-right: 10px;
+}
+.reporter {
+  color: red;
 }

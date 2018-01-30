@@ -4,3 +4,4 @@
 //
 // console.log(arr)
 // })
+document.getElementById('main-blurb').innerHTML = "this is the main blurb"
