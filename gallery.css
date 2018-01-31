@@ -26,7 +26,11 @@
 .dropdown-toggle{
   color: white;
 }
-p {
+#exampleCheck1 {
+  left: 30px;
+}
+
+p, .blockquote-footer {
   font-size: 20pt;
 }
 footer {

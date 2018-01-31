@@ -1,139 +1,176 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.css">
-    <link rel="stylesheet" href="gallery.css">
-    <title>Meet the Minutemen</title>
-  </head>
-  <body>
-    <div class="navbar-fixed-top">
-      <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><img class="vault-nav img-responsive" src="Images/OnB6GyAF_thumb.png" alt=""><h1 class="display-3 navbar-text">Radio Freedom<small class="text-muted title-shadow"> Defend the people at a minutes notice</small></h1></a>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.css">
+  <link rel="stylesheet" href="gallery.css">
+  <title>Meet the Minutemen</title>
+</head>
+
+<body>
+  <div class="navbar-fixed-top">
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><img class="vault-nav img-responsive" src="Images/OnB6GyAF_thumb.png" alt=""><h1 class="display-3 navbar-text">Radio Freedom<small class="text-muted title-shadow"> Defend the people at a minutes notice</small></h1></a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             More Places
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a id="blog" class="dropdown-item" href="#">Blog of the General</a>
-            <a id="piper" class="dropdown-item" href="#">Piper's photo gallery</a>
-            <div class="dropdown-divider"></div>
-            <a id="report" class="dropdown-item" href="#">Make a report</a>
-          </div>
-        </li>
-      </nav>
-    </div>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a id="blog" class="dropdown-item" href="blog.html">Blog of the General</a>
+          <a id="piper" class="dropdown-item" href="index.html">Home</a>
+          <div class="dropdown-divider"></div>
+          <a id="report" data-toggle="modal" data-target="#form-modal" class="dropdown-item" href="#">Make a report</a>
+        </div>
+      </li>
+    </nav>
+  </div>
 
-    <!-- end of navbar -->
+  <!-- end of navbar -->
 
-    <!-- carousel area -->
+  <!-- carousel area -->
 
-    <!-- Container for the image gallery -->
-<div class="container">
+  <!-- Container for the image gallery -->
+  <div class="container">
 
-  <!-- Full-width images with number text -->
-  <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
       <img src="Images/377160_screenshots_20160908214116_1.jpg" style="width:100%">
-  </div>
+    </div>
 
-  <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
       <img src="Images/377160_screenshots_20160917225939_1.jpg" style="width:100%">
-  </div>
+    </div>
 
-  <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
       <img src="Images/377160_screenshots_20160920154311_1.jpg" style="width:100%">
-  </div>
+    </div>
 
-  <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
       <img src="Images/377160_screenshots_20161111154809_1.jpg" style="width:100%">
-  </div>
+    </div>
 
-  <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
       <img src="Images/377160_screenshots_20180130175021_1.jpg" style="width:100%">
-  </div>
+    </div>
 
-  <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
       <img src="Images/377160_screenshots_20180130180042_1.jpg" style="width:100%">
-  </div>
+    </div>
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-  <!-- Image text -->
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
 
-  <!-- Thumbnail images -->
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="Images/377160_screenshots_20160908214116_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="some stuff">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="Images/377160_screenshots_20160917225939_1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="Images/377160_screenshots_20160920154311_1.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="Images/377160_screenshots_20161111154809_1.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="Images/377160_screenshots_20180130175021_1.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="Images/377160_screenshots_20180130180042_1.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="Images/377160_screenshots_20160908214116_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="some stuff">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Images/377160_screenshots_20160917225939_1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Images/377160_screenshots_20160920154311_1.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Images/377160_screenshots_20161111154809_1.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Images/377160_screenshots_20180130175021_1.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Images/377160_screenshots_20180130180042_1.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+      </div>
     </div>
   </div>
-</div>
   <!-- Piper's Modal -->
 
   <div id="pipers-modal" class="modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Publik Occurrences</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Publik Occurrences</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
-      <div class="modal-body">
-        <p>Its been my pleasure these past few weeks to follow the Commonwealth's mysterious newest resident, The Valkyrie. Now also The General of the Minutemen, she granted me full access to her activities, with the caviat that her real name and history were off limits. This is what followed. I hope you enjoy looking through it, and that it gives you some insight on this complicated individual!</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        <div class="modal-body">
+          <p>Its been my pleasure these past few weeks to follow the Commonwealth's mysterious newest resident, The Sole Survivor, aka The Valkyrie. Now also The General of the Minutemen, she granted me full access to her activities, with the caviat that
+            her real name and history were off limits. This is what followed. I hope you enjoy looking through it, and that it gives you some insight on this complicated individual!
+            <p class="blockquote-footer">Piper Wright</p>
+          </p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-    <footer>
-  <div class="container-fluid social-section text-center">
-    <div class="row">
-  <img class="img-fluid faction-logo mx-auto" src="Images/1320-b0652f10ef63bc1ffd758db6490f4859d26ed39c.png" alt="">
-  <img class="img-fluid faction-logo mx-auto" src="Images/9585e263247384e0c29fd360475f41e50327d902_hq.jpg" alt="">
-  <img class="img-fluid faction-logo mx-auto" src="Images/photo-thumb-123743.png" alt="">
-  <img class="img-fluid faction-logo mx-auto" src="Images/pp,550x550.u3.jpg" alt="">
+  <div id="form-modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Make a report</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+        </div>
+        <div class="modal-body">
+          <!-- form section -->
+          <form>
+            <div class="form-group">
+              <label>File a Report</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">If you see something, say something</small>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">I am not a Synth</label>
+            </div>
+            <button id="submit-button" type="submit" class="btn btn-primary disabled">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container-fluid social-section text-center">
+      <div class="row">
+        <img class="img-fluid faction-logo mx-auto" src="Images/1320-b0652f10ef63bc1ffd758db6490f4859d26ed39c.png" alt="">
+        <img class="img-fluid faction-logo mx-auto" src="Images/9585e263247384e0c29fd360475f41e50327d902_hq.jpg" alt="">
+        <img class="img-fluid faction-logo mx-auto" src="Images/photo-thumb-123743.png" alt="">
+        <img class="img-fluid faction-logo mx-auto" src="Images/pp,550x550.u3.jpg" alt="">
       </div>
     </div>
     <div class="footer-copyright">
-        <div class="container-fluid text-center">
-          Copyright © 2277 Minutemen of the Commonwealth
-        </div>
+      <div class="container-fluid text-center">
+        Copyright © 2277 Minutemen of the Commonwealth
+      </div>
     </div>
-</footer>
+  </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script type="text/javascript" src="gallery.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script type="text/javascript" src="gallery.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,101 @@
+#exampleCheck1 {
+  left: 30px;
+}
+
+footer {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #555555;
+  color: white;
+}
+
+.faction-logo {
+  margin-top: 5px;
+  background-color: white;
+  border-radius: 50%;
+  max-height: 50px;
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.navbar {
+  max-height: 84px;
+}
+
+.vault-nav {
+  max-height: 65px;
+  margin-bottom: 23px;
+}
+
+.title-shadow {
+  font-size: 25pt;
+}
+
+#blog-headings {
+  margin-top: 200px;
+}
+
+#blog-list-headings {
+  font-size: 30pt;
+}
+
+#the-story {
+  color: white;
+  font-size: 20pt;
+}
+
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #111;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}

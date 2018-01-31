@@ -2,18 +2,21 @@
   padding: 0;
   margin: 0;
 }
+
 a {
-text-decoration: none;
+  text-decoration: none;
 }
+
 .container-fluid {
   background-color: black;
 }
+
 .navbar-fixed-top {
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-    top: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  top: 0;
 }
 
 .navbar {
@@ -24,36 +27,46 @@ text-decoration: none;
   max-height: 65px;
   margin-bottom: 23px;
 }
+
 .title-shadow {
   font-size: 25pt;
 }
+
 .dropdown {
   margin-right: 100px;
 }
-.dropdown-toggle{
+
+.dropdown-toggle {
   color: white;
 }
+
 /*.main-story {
   margin-top: 95px;
 }*/
+
 .radio-card {
   padding: 0;
   margin-top: 50px;
 }
+
 .dcr {
   padding-left: 10px;
   margin-bottom: 80px;
 }
+
 .minutemen {
   padding-right: 10px;
   margin-bottom: 80px;
 }
+
 #main-img {
   max-height: 550px;
 }
+
 .reporter {
   color: red;
 }
+
 footer {
   position: relative;
   right: 0;
@@ -63,34 +76,40 @@ footer {
   background-color: #555555;
   color: white;
 }
+
 .faction-logo {
   margin-top: 5px;
   background-color: white;
   border-radius: 50%;
   max-height: 50px;
 }
+
 #main-blurb {
   font-size: 30pt;
 }
+
 #headlineModalContent {
   font-size: 20pt;
 }
+
 #exampleCheck1 {
   left: 30px;
 }
+
 .parallax {
-    background-image: url("Images/377160_screenshots_20180130175021_1.jpg");
-    height: 800px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("Images/377160_screenshots_20180130175021_1.jpg");
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .parallax2 {
-    background-image: url("Images/377160_screenshots_20160917225939_1.jpg");
-    height: 900px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("Images/377160_screenshots_20160917225939_1.jpg");
+  height: 900px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -11,7 +11,6 @@ fetch('http://localhost:3000/db')
     document.getElementById('reporter2').innerHTML = 'Travis Miles'
 
     // modal form validation function
-
     document.getElementById('exampleCheck1').addEventListener('click', nonSynth)
 
     function nonSynth(e) {
@@ -25,14 +24,16 @@ fetch('http://localhost:3000/db')
       // secondary headlines
       document.getElementById('second-title-one').addEventListener('click', secondaryStoryOne)
       document.getElementById('second-title-two').addEventListener('click', secondaryStoryTwo)
-    function secondaryStoryOne(){
-      document.getElementById('secondary-modal-headline').innerHTML = arr.Minutemen[8].title
-      document.getElementById('secondary-modal-content').innerHTML = arr.Minutemen[8].story
+
+      function secondaryStoryOne() {
+        document.getElementById('secondary-modal-headline').innerHTML = arr.Minutemen[8].title
+        document.getElementById('secondary-modal-content').innerHTML = arr.Minutemen[8].story
       }
-    function secondaryStoryTwo(){
-      document.getElementById('secondary-modal-headline').innerHTML = arr.dcr[7].title
-      document.getElementById('secondary-modal-content').innerHTML = arr.dcr[7].story
-    }
+
+      function secondaryStoryTwo() {
+        document.getElementById('secondary-modal-headline').innerHTML = arr.dcr[7].title
+        document.getElementById('secondary-modal-content').innerHTML = arr.dcr[7].story
+      }
       // minutemen side story block
       document.getElementById('minutemen-headline-1').addEventListener('click', minutemenStory1)
       document.getElementById('minutemen-headline-2').addEventListener('click', minutemenStory2)
@@ -115,24 +116,28 @@ fetch('http://localhost:3000/db')
 // post function
 let newReport = {
   report: `A Deathclaw ate my homework!`
+  // target html text-align
+  // <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
 
 }
 document.getElementById('submit-button').addEventListener('click', post)
-  function post(e){
-    e.preventDefault()
-    fetch(`http://localhost:3000/reports`, {
-        method: 'post',
-        body: JSON.stringify(newReport),
-        headers: new Headers({
-          'Content-Type': 'application/json'
-        })
+
+function post(e) {
+  e.preventDefault()
+  fetch(`http://localhost:3000/reports`, {
+      method: 'post',
+      body: JSON.stringify(newReport),
+      headers: new Headers({
+        'Content-Type': 'application/json'
       })
-      .then(response => {
-        console.log('the server response', response)
-        return response.json()
-      })
-      .then(data => {
-        window.alert('Your report will be reviewed by Ronnie Shaw in the order it was recieved');
-        console.log('data', data)
-      })
-    }
+    })
+    .then(response => {
+      console.log('the server response', response)
+      return response.json()
+    })
+    .then(data => {
+      window.alert('Your report will be reviewed by Ronnie Shaw in the order it was recieved');
+      console.log('data', data)
+    })
+}
