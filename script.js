@@ -19,10 +19,11 @@ fetch('http://localhost:3000/db')
     }
     // loop for dynamic story generation
     for (let i = 0; i < arr.Minutemen.length - 4; i++) {
-
+      // main headline assignment
       document.getElementById(`minutemen-headline-${i+1}`).innerHTML = arr.Minutemen[i].title
       document.getElementById(`dcr-headline-${i+1}`).innerHTML = arr.dcr[i + 1].title
-
+      // secondary headlines
+      
       // minutemen side story block
       document.getElementById('minutemen-headline-1').addEventListener('click', minutemenStory1)
       document.getElementById('minutemen-headline-2').addEventListener('click', minutemenStory2)
