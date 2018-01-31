@@ -18,9 +18,9 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a id="blog" class="dropdown-item" href="#">Blog of the General</a>
-          <a id="piper" class="dropdown-item" href="#">Piper's photo gallery</a>
+          <a id="piper" class="dropdown-item" href="gallery.html">Piper's photo gallery</a>
           <div class="dropdown-divider"></div>
-          <a id="report" class="dropdown-item" href="#">Make a report</a>
+          <a id="report" data-toggle="modal" data-target="#form-modal" class="dropdown-item" href="#">Make a report</a>
         </div>
       </li>
     </nav>
@@ -214,6 +214,38 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- form modal -->
+  <div id="form-modal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Make a report</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- form section -->
+        <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">File a Report</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted">If you see something, say something</small>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">I am not a Synth</label>
+        </div>
+        <button id="submit-button" type="submit" class="btn btn-primary disabled">Submit</button>
+      </form>
+      </div>
+      <div class="modal-footer">
+
       </div>
     </div>
   </div>
