@@ -5,7 +5,9 @@
 a {
 text-decoration: none;
 }
-
+.container-fluid {
+  background-color: black;
+}
 .navbar-fixed-top {
     position: fixed;
     right: 0;
@@ -53,7 +55,7 @@ text-decoration: none;
   color: red;
 }
 footer {
-  position: fixed;
+  position: relative;
   right: 0;
   left: 0;
   z-index: 1030;
