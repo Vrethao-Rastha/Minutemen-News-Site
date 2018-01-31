@@ -31,9 +31,9 @@ text-decoration: none;
 .dropdown-toggle{
   color: white;
 }
-.main-story {
+/*.main-story {
   margin-top: 95px;
-}
+}*/
 .radio-card {
   padding: 0;
   margin-top: 50px;
@@ -46,8 +46,8 @@ text-decoration: none;
   padding-right: 10px;
   margin-bottom: 80px;
 }
-.minutemen-adjust {
-  height: 180px;
+#main-img {
+  max-height: 550px;
 }
 .reporter {
   color: red;
@@ -75,4 +75,20 @@ footer {
 }
 #exampleCheck1 {
   left: 30px;
+}
+.parallax {
+    background-image: url("Images/377160_screenshots_20180130175021_1.jpg");
+    height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 {
+    background-image: url("Images/377160_screenshots_20160917225939_1.jpg");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
