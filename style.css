@@ -9,6 +9,7 @@ a {
 
 .container-fluid {
   background-color: black;
+  margin-top: 60px;
 }
 
 .navbar-fixed-top {
@@ -40,9 +41,9 @@ a {
   color: white;
 }
 
-/*.main-story {
-  margin-top: 95px;
-}*/
+.mr-3 {
+  max-height: 115px;
+}
 
 .radio-card {
   padding: 0;

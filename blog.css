@@ -38,7 +38,7 @@ footer {
   font-size: 25pt;
 }
 .nav-item {
-  margin-right: 40px;
+  margin-right: 80px;
 }
 #blog-list-headings {
   font-size: 30pt;
@@ -63,7 +63,7 @@ footer {
   /* Stay at the top */
   left: 0;
   background-image: url(Images/Goodneighbor.jpg);
-  opacity: 0.9;
+
 
   /* Black*/
   overflow-x: hidden;
@@ -80,7 +80,7 @@ footer {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #white;
+  color: #black;
   display: block;
   transition: 0.3s;
 }
