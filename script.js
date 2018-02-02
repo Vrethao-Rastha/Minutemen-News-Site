@@ -21,6 +21,8 @@ fetch('http://localhost:3000/db')
       // main headline assignment
       document.getElementById(`minutemen-headline-${i+1}`).innerHTML = arr.Minutemen[i].title
       document.getElementById(`dcr-headline-${i+1}`).innerHTML = arr.dcr[i + 1].title
+      let theHeadlinePicture = `<img class="img-fluid" src="Images/377160_screenshots_20180130180042_1.jpg" alt="">`
+      document.getElementById('primary-picture-bin').innerHTML = theHeadlinePicture
       // secondary headlines
       document.getElementById('second-title-one').addEventListener('click', secondaryStoryOne)
       document.getElementById('second-title-two').addEventListener('click', secondaryStoryTwo)
@@ -28,11 +30,15 @@ fetch('http://localhost:3000/db')
       function secondaryStoryOne() {
         document.getElementById('secondary-modal-headline').innerHTML = arr.Minutemen[8].title
         document.getElementById('secondary-modal-content').innerHTML = arr.Minutemen[8].story
+        let thePicture = `<img class="img-fluid" src="Images/1200px-Fo4_Mama_Murphy.png" alt="">`
+        document.getElementById('secondary-picture-bin').innerHTML = thePicture
       }
 
       function secondaryStoryTwo() {
         document.getElementById('secondary-modal-headline').innerHTML = arr.dcr[7].title
         document.getElementById('secondary-modal-content').innerHTML = arr.dcr[7].story
+        let thePicture = `<img class="img-fluid" src="Images/Fallout+4+DLC-ed.jpg" alt="">`
+        document.getElementById('secondary-picture-bin').innerHTML = thePicture
       }
       // minutemen side story block
       document.getElementById('minutemen-headline-1').addEventListener('click', minutemenStory1)
@@ -44,26 +50,36 @@ fetch('http://localhost:3000/db')
       function minutemenStory1() {
         document.getElementById('side-story-modal-headline').innerHTML = arr.Minutemen[0].title
         document.getElementById('side-story-modal-content').innerHTML = arr.Minutemen[0].story
+        let thePicture = `<img class="img-fluid" src="Images/slog.jpg" alt="">`
+        document.getElementById('side-story-picture-bin').innerHTML = thePicture
       }
 
       function minutemenStory2() {
         document.getElementById('side-story-modal-headline').innerHTML = arr.Minutemen[1].title
         document.getElementById('side-story-modal-content').innerHTML = arr.Minutemen[1].story
+        let thePicture = `<img class="img-fluid" src="Images/abernathy.jpg" alt="">`
+        document.getElementById('side-story-picture-bin').innerHTML = thePicture
       }
 
       function minutemenStory3() {
         document.getElementById('side-story-modal-headline').innerHTML = arr.Minutemen[2].title
         document.getElementById('side-story-modal-content').innerHTML = arr.Minutemen[2].story
+        let thePicture = `<img class="img-fluid" src="Images/red_rocket.jpg" alt="">`
+        document.getElementById('side-story-picture-bin').innerHTML = thePicture
       }
 
       function minutemenStory4() {
         document.getElementById('side-story-modal-headline').innerHTML = arr.Minutemen[3].title
         document.getElementById('side-story-modal-content').innerHTML = arr.Minutemen[3].story
+        let thePicture = `<img class="img-fluid" src="Images/greentop.jpg" alt="">`
+        document.getElementById('side-story-picture-bin').innerHTML = thePicture
       }
 
       function minutemenStory5() {
         document.getElementById('side-story-modal-headline').innerHTML = arr.Minutemen[4].title
         document.getElementById('side-story-modal-content').innerHTML = arr.Minutemen[4].story
+        let thePicture = `<img class="img-fluid" src="Images/mr_gutsy.jpg" alt="">`
+        document.getElementById('side-story-picture-bin').innerHTML = thePicture
       }
 
       // diamond city radio side story block
@@ -77,26 +93,36 @@ fetch('http://localhost:3000/db')
       function dcrStory1() {
         document.getElementById('side-story-modal-headline').innerHTML = arr.dcr[1].title
         document.getElementById('side-story-modal-content').innerHTML = arr.dcr[1].story
+        let thePicture = `<img class="img-fluid" src="Images/corvega.jpg" alt="">`
+        document.getElementById('side-story-picture-bin').innerHTML = thePicture
       }
 
       function dcrStory2() {
         document.getElementById('side-story-modal-headline').innerHTML = arr.dcr[2].title
         document.getElementById('side-story-modal-content').innerHTML = arr.dcr[2].story
+        let thePicture = `<img class="img-fluid" src="Images/arcjet.jpg" alt="">`
+        document.getElementById('side-story-picture-bin').innerHTML = thePicture
       }
 
       function dcrStory3() {
         document.getElementById('side-story-modal-headline').innerHTML = arr.dcr[3].title
         document.getElementById('side-story-modal-content').innerHTML = arr.dcr[3].story
+        let thePicture = `<img class="img-fluid" src="Images/Soul_survivor.jpg" alt="">`
+        document.getElementById('side-story-picture-bin').innerHTML = thePicture
       }
 
       function dcrStory4() {
         document.getElementById('side-story-modal-headline').innerHTML = arr.dcr[4].title
         document.getElementById('side-story-modal-content').innerHTML = arr.dcr[4].story
+        let thePicture = `<img class="img-fluid" src="Images/university_point.jpg" alt="">`
+        document.getElementById('side-story-picture-bin').innerHTML = thePicture
       }
 
       function dcrStory5() {
         document.getElementById('side-story-modal-headline').innerHTML = arr.dcr[5].title
         document.getElementById('side-story-modal-content').innerHTML = arr.dcr[5].story
+        let thePicture = `<img class="img-fluid" src="Images/piper.jpg" alt="">`
+        document.getElementById('side-story-picture-bin').innerHTML = thePicture
       }
 
 

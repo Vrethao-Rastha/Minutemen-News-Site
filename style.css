@@ -9,7 +9,6 @@ a {
 
 .container-fluid {
   background-color: black;
-  margin-top: 60px;
 }
 
 .navbar-fixed-top {
@@ -99,7 +98,7 @@ footer {
 
 .parallax {
   background-image: url("Images/377160_screenshots_20180130175021_1.jpg");
-  height: 800px;
+  height: 1100px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
