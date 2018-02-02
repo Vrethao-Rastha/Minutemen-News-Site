@@ -1,7 +1,6 @@
 fetch('http://localhost:3000/db')
   .then(response => response.json())
   .then(arr => {
-    // console.log(arr)
     // static headlines and pictures
     document.getElementById('main-blurb').addEventListener('click', learnMore)
     document.getElementById('main-blurb').innerHTML = arr.dcr[0].title
@@ -10,12 +9,13 @@ fetch('http://localhost:3000/db')
     document.getElementById('second-title-two').innerHTML = arr.dcr[7].title
     document.getElementById('reporter2').innerHTML = 'Travis Miles'
 
-    // modal form validation function
-    document.getElementById('exampleCheck1').addEventListener('click', nonSynth)
-
-    function nonSynth(e) {
-      document.getElementById('submit-button').classList.remove('disabled');
+    // modal news headline object function
+    function learnMore(e) {
+      document.getElementById('headlineModalContent').innerHTML = arr.dcr[0].story
+      document.getElementById('headlineModalLabel').innerHTML = arr.dcr[0].title
     }
+
+
     // loop for dynamic story generation
     for (let i = 0; i < arr.Minutemen.length - 4; i++) {
       // main headline assignment
@@ -23,7 +23,8 @@ fetch('http://localhost:3000/db')
       document.getElementById(`dcr-headline-${i+1}`).innerHTML = arr.dcr[i + 1].title
       let theHeadlinePicture = `<img class="img-fluid" src="Images/377160_screenshots_20180130180042_1.jpg" alt="">`
       document.getElementById('primary-picture-bin').innerHTML = theHeadlinePicture
-      // secondary headlines
+
+      // secondary headline creation
       document.getElementById('second-title-one').addEventListener('click', secondaryStoryOne)
       document.getElementById('second-title-two').addEventListener('click', secondaryStoryTwo)
 
@@ -40,7 +41,7 @@ fetch('http://localhost:3000/db')
         let thePicture = `<img class="img-fluid" src="Images/Fallout+4+DLC-ed.jpg" alt="">`
         document.getElementById('secondary-picture-bin').innerHTML = thePicture
       }
-      // minutemen side story block
+      // minutemen side story creation
       document.getElementById('minutemen-headline-1').addEventListener('click', minutemenStory1)
       document.getElementById('minutemen-headline-2').addEventListener('click', minutemenStory2)
       document.getElementById('minutemen-headline-3').addEventListener('click', minutemenStory3)
@@ -82,7 +83,7 @@ fetch('http://localhost:3000/db')
         document.getElementById('side-story-picture-bin').innerHTML = thePicture
       }
 
-      // diamond city radio side story block
+      // diamond city radio side story creation
       document.getElementById('dcr-headline-1').addEventListener('click', dcrStory1)
       document.getElementById('dcr-headline-2').addEventListener('click', dcrStory2)
       document.getElementById('dcr-headline-3').addEventListener('click', dcrStory3)
@@ -124,29 +125,20 @@ fetch('http://localhost:3000/db')
         let thePicture = `<img class="img-fluid" src="Images/piper.jpg" alt="">`
         document.getElementById('side-story-picture-bin').innerHTML = thePicture
       }
-
-
-
     }
 
-    // modal news object function
-    function learnMore(e) {
-      console.log('click')
-      document.getElementById('headlineModalContent').innerHTML = arr.dcr[0].story
-      document.getElementById('headlineModalLabel').innerHTML = arr.dcr[0].title
-    }
-  })
-// end of modal news object function
+// form validation function
+document.getElementById('exampleCheck1').addEventListener('click', nonSynth)
 
+function nonSynth(e) {
+  document.getElementById('submit-button').classList.remove('disabled');
+}
 
 // post function
 let newReport = {
   report: `A Deathclaw ate my homework!`
-  // target html text-align
-  // <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-
-
 }
+// submission button
 document.getElementById('submit-button').addEventListener('click', post)
 
 function post(e) {
@@ -167,3 +159,4 @@ function post(e) {
       console.log('data', data)
     })
 }
+})

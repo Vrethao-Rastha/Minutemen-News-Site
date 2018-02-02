@@ -32,8 +32,11 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
   captionText.innerHTML = dots[slideIndex - 1].alt;
 }
+
+// code to autoload the modal
 $('#pipers-modal').modal()
 
+// post function
 let newReport = {
   report: `A Deathclaw ate my homework!`
 }

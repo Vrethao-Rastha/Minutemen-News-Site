@@ -12,10 +12,6 @@ fetch('http://localhost:3000/db')
   .then(response => response.json())
   .then(arr => {
 
-    // document.addEventListener("DOMContentLoaded", blogPopulator)
-
-
-
 document.getElementById('story-one').addEventListener('click', storyOne)
 document.getElementById('story-two').addEventListener('click', storyTwo)
 document.getElementById('story-three').addEventListener('click', storyThree)

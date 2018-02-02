@@ -1,12 +1,13 @@
 * {
   box-sizing: border-box;
 }
+
 .navbar-fixed-top {
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-    top: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  top: 0;
 }
 
 .navbar {
@@ -17,15 +18,19 @@
   max-height: 65px;
   margin-bottom: 23px;
 }
+
 .title-shadow {
   font-size: 25pt;
 }
+
 .dropdown {
   margin-right: 100px;
 }
-.dropdown-toggle{
+
+.dropdown-toggle {
   color: white;
 }
+
 #exampleCheck1 {
   left: 30px;
 }
@@ -33,6 +38,7 @@
 p, .blockquote-footer {
   font-size: 20pt;
 }
+
 footer {
   margin-top: 50px;
   position: relative;
@@ -43,31 +49,28 @@ footer {
   background-color: #555555;
   color: white;
 }
+
 .faction-logo {
   margin-top: 5px;
   background-color: white;
   border-radius: 50%;
   max-height: 50px;
 }
-/* Position the image container (needed to position the left and right arrows) */
+
 .container {
   position: relative;
   margin-top: 90px;
 }
 
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
+.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 40%;
@@ -82,19 +85,15 @@ footer {
   -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
+.prev:hover, .next:hover {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -103,7 +102,6 @@ footer {
   top: 0;
 }
 
-/* Container for image text */
 .caption-container {
   text-align: center;
   background-color: #222;
@@ -117,18 +115,15 @@ footer {
   clear: both;
 }
 
-/* Six columns side by side */
 .column {
   float: left;
   width: 16.66%;
 }
 
-/* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
 }
 
-.active,
-.demo:hover {
+.active, .demo:hover {
   opacity: 1;
 }
