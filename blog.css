@@ -42,6 +42,10 @@ footer {
   margin-right: 80px;
 }
 
+.text-blurb {
+  font-size: 30pt;
+}
+
 #blog-list-headings {
   font-size: 30pt;
   z-index: -1
