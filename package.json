@@ -3,8 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "blog.js",
+  "dependencies": {
+    "body": "^5.1.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "parser": "^0.1.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -16,8 +25,5 @@
   "bugs": {
     "url": "https://github.com/Vrethao-Rastha/Minutemen-News-Site/issues"
   },
-  "homepage": "https://github.com/Vrethao-Rastha/Minutemen-News-Site#readme",
-  "dependencies": {
-    "json-server": "^0.12.1"
-  }
+  "homepage": "https://github.com/Vrethao-Rastha/Minutemen-News-Site#readme"
 }
