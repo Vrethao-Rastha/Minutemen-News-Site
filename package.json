@@ -1,0 +1,23 @@
+{
+  "name": "Minutemen-News-Site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "blog.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vrethao-Rastha/Minutemen-News-Site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vrethao-Rastha/Minutemen-News-Site/issues"
+  },
+  "homepage": "https://github.com/Vrethao-Rastha/Minutemen-News-Site#readme",
+  "dependencies": {
+    "json-server": "^0.12.1"
+  }
+}
