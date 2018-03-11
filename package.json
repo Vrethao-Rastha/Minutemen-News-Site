@@ -8,7 +8,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "json-server --watch db.json"
+    "test": "json-server --watch db.json",
+    "start": "index.html"
   },
   "repository": {
     "type": "git",
