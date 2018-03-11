@@ -9,7 +9,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "json-server --watch db.json",
-    "start": "index.html"
+    "start": "script.js"
   },
   "repository": {
     "type": "git",
